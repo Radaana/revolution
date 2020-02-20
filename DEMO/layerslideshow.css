@@ -1,0 +1,88 @@
+/**
+ * @category    MagenThemes
+ * @package     MagenThemes_LayerSlideshow
+ * @license     http://www.yestheme.com
+ * @author      http://www.yestheme.com
+ */
+.fullwidthbanner-container {
+    overflow: hidden;
+    padding: 0;
+	padding-top:10px;
+    position: relative;
+    max-height: 660px !important;
+    width: 100% !important;
+	z-index:0;
+	background:#fff;
+}
+.fullwidthbanner-container .fullwidthabnner {
+    position: relative;
+    width: 100% !important;
+    max-height: 660px !important;
+}
+.fixedbanner-container {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+	padding-top:10px;
+    position: relative;
+    width: 1170px;
+	background:#fff;
+	z-index:0;
+}
+.fixedbanner-container .fixedbanner {
+	height: 500px;
+    overflow: hidden;
+   width: 1146px;
+   margin: 0 12px;
+}
+.responsivebanner-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+	padding-top:10px;
+    position: relative;
+    width: 1170px;
+	background:#fff;
+	z-index:0;
+}
+.responsivebanner {
+	height: 500px;
+    overflow: hidden;
+    position: relative;
+   width: 1146px;
+   margin: 0 12px;
+}
+  /*	THE MEDIA CHOOSER TO SET DIFFERENT SIZES OF THE CONTAINER DEPENDING ON THE SCREEN SIZE    */
+   @media only screen and (min-width: 768px) and (max-width: 959px) {
+ 		  .responsivebanner-container{	width:750px; height:349px;}
+		  .responsivebanner{width:725px;}
+
+   }
+
+   @media only screen and (min-width: 480px) and (max-width: 767px) {
+		   .responsivebanner-container{	width:480px; height:220px;	}
+		   .responsivebanner{	width:457px;}		
+		   .mt-preface{background:#fff;}
+
+   }
+
+   @media only screen and (min-width: 0px) and (max-width: 479px) {
+			.responsivebanner-container{width:320px;height:147px;	}
+			.responsivebanner{width:300px;}	
+			.mt-preface{background:#fff;}
+
+   }
+   @media only screen and (min-width: 240px) and (max-width: 320px) {
+       .responsivebanner-container{/* width:320px !important;height:147px */;	}
+			.responsivebanner{/* width:300px; */}	
+
+   }
+   @media only screen and (max-width: 360px) {
+     .responsivebanner-container{/* width:355px;height:147px; */	}
+	.responsivebanner{/* width:324px; */}	
+   }
+   @media only screen and (min-width: 360px) and (max-width: 640px) {
+     .responsivebanner-container{	/* width:640px; height:250px;	 */}
+		   .responsivebanner{	/* width:614px;height:250px !important; */}		
+   }
